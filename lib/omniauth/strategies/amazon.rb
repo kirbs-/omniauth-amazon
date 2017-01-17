@@ -22,7 +22,7 @@ module OmniAuth
 
       def build_access_token
         token_params = {
-          :redirect_uri => callback_url.split('?').first,
+          :redirect_uri => 'https://fezz.io/users/auth/amazon/callback',
           :client_id => client.id,
           :client_secret => client.secret
         }
